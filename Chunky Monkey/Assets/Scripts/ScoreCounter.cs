@@ -15,12 +15,6 @@ public class ScoreCounter : MonoBehaviour
         Instance = this;
         score = 0;
         scoreText = GetComponent<TextMeshProUGUI>();
-        UpdateScore(5);
-    }
-
-    void Update()
-    {
-        
     }
 
     public void UpdateScore(int scoreInc) {
