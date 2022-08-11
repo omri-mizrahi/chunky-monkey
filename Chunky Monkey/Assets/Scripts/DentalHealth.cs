@@ -12,9 +12,4 @@ public class DentalHealth : SliderBar
         base.Awake();
         Instance = this;
     }
-
-    void Update()
-    {
-        
-    }
 }

@@ -14,6 +14,7 @@ public class PlayerCollisions : MonoBehaviour
     }
 
     void EatFood() {
+        // TODO:
         // play animation
         // play bite sound
     }

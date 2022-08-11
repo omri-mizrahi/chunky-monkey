@@ -21,7 +21,7 @@ public class SliderBar : MonoBehaviour
         currValue += inc;
         if (currValue > maxValue) currValue = maxValue;
         SetValue(currValue);
-        // call check game over from game manager
+        // TODO: call check game over from game manager
     }
 
     void SetValue(float value) {

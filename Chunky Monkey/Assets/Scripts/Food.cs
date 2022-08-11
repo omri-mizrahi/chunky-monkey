@@ -10,6 +10,6 @@ public class Food : MonoBehaviour
 
     public virtual void OnEat() {
         HungerBar.Instance.AddValue(hungerValue);
-        // play eat sound
+        // TODO: play eat sound
     }
 }
