@@ -7,6 +7,10 @@ public class BadFood : Food
     [SerializeField] int dentalDamage = 30;
     #endregion
 
+    void Start() {
+        // TODO: apply random toss (radom force vector, radnom torque)
+    }
+
     public override void OnEat() {
         base.OnEat();
         DentalHealth.Instance.AddValue(-dentalDamage);

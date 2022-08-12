@@ -30,4 +30,10 @@ public class PlayerController : MonoBehaviour
             transform.position = pos;
         }
     }
+
+    public void EatFood() {
+        // TODO:
+        // play animation
+        // play bite sound
+    }
 }

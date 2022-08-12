@@ -7,8 +7,8 @@ public class SliderBar : MonoBehaviour
     #region Variables
     [SerializeField] float maxValue = 100;
     
-    Slider slider;
-    float currValue;
+    private Slider slider;
+    private float currValue;
     #endregion
 
     protected virtual void Awake()

@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5757851853728207915}
   - component: {fileID: 5757851853728207913}
-  - component: {fileID: 5757851853728207912}
+  - component: {fileID: 5510980294763240038}
   m_Layer: 5
   m_Name: SliderBar
   m_TagString: Untagged
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5757851853728207912
+--- !u!114 &5510980294763240038
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5757851853728207914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c78d4e62395ef1438297499087c0bff, type: 3}
+  m_Script: {fileID: 11500000, guid: b98837bb7422ecf4a872844d5b214bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxValue: 100

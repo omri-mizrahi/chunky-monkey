@@ -4,6 +4,8 @@ public static class Consts {
     }
 
     public class Tags {
-        public const string FOOD = "Food";
+        // public const string FOOD = "Food";
+        public const string GROUND = "Ground";
+        public const string PLAYER = "Player";
     }
 }
