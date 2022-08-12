@@ -1209,8 +1209,8 @@ MonoBehaviour:
   stopSpawnRate: 0.5
   initialDelay: 0
   spawnPosRanges:
-  - pointA: {x: 8, y: 8}
-    pointB: {x: -8, y: 8}
+  - pointA: {x: 8, y: 10}
+    pointB: {x: -8, y: 10}
 --- !u!4 &1935541242
 Transform:
   m_ObjectHideFlags: 0
@@ -1219,7 +1219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935541239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.03, y: 7.96, z: 0}
+  m_LocalPosition: {x: 8.03, y: 9.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

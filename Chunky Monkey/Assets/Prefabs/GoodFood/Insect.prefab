@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 5981132875892056523}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.91, y: 1.64, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -149,3 +149,5 @@ MonoBehaviour:
   hungerValue: 25
   eatSound: {fileID: 0}
   scoreValue: 5
+  startVelocity: {x: 0, y: -1.3}
+  dropAfterSeconds: 1.5

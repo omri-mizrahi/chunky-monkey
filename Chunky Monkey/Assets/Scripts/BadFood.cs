@@ -7,7 +7,7 @@ public class BadFood : Food
     [SerializeField] int dentalDamage = 30;
     #endregion
 
-    void Start() {
+    void OnEnable() {
         // TODO: apply random toss (radom force vector, radnom torque)
     }
 

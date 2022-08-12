@@ -23,7 +23,7 @@ public class FoodSpawner : PoolBase<Food>
     void Awake()
     {
         spawnRate = startSpawnRate;
-        InitPool(prefabs);
+        InitPool();
     }
 
     void Start() {
@@ -44,18 +44,20 @@ public class FoodSpawner : PoolBase<Food>
         }
     }
 
-    void SetSpawnCooldown() {
-        spawnCooldown = spawnRate;
-    }
-
-    void KillAction(Food food) {
-        PoolRelease(food);
-    }
+    protected override List<Food> Prefabs => prefabs;
 
     protected override void GetSetup(Food food)
     {
         food.transform.position = spawnPosRanges[Random.Range(0, spawnPosRanges.Count)].GetPointInRange();
         food.gameObject.SetActive(true);
         food.Init(KillAction);
+    }
+
+    void SetSpawnCooldown() {
+        spawnCooldown = spawnRate;
+    }
+
+    void KillAction(Food food) {
+        PoolRelease(food);
     }
 }
