@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class GoodFood : Food
 {
@@ -9,14 +10,11 @@ public class GoodFood : Food
     [SerializeField] float dropAfterSeconds = 1.5f;
 
     private float timeFromStart;
-    private Rigidbody2D rb;
     #endregion
 
-    void Awake() {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    void OnEnable() {
+    public override void Init(Action<Food> killAction)
+    {
+        base.Init(killAction);
         timeFromStart = 0f;
     }
 

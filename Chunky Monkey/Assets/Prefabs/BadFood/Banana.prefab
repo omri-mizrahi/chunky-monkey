@@ -128,6 +128,13 @@ MonoBehaviour:
   hungerValue: 25
   eatSound: {fileID: 0}
   dentalDamage: 30
+  throwTowards: {x: 0, y: 0}
+  minRightAngle: 30
+  maxRightAngle: 70
+  mirrorAngleInc: 80
+  force: 10
+  minTorque: -65
+  maxTorque: 65
 --- !u!50 &895700388386710402
 Rigidbody2D:
   serializedVersion: 4

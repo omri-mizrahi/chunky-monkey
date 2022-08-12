@@ -1,7 +1,7 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
-using System.Collections.Generic;
-using System;
 
 public abstract class PoolBase<T> : MonoBehaviour where T : MonoBehaviour
 {
@@ -25,6 +25,6 @@ public abstract class PoolBase<T> : MonoBehaviour where T : MonoBehaviour
     public T PoolGet() {
         if (pool == null) throw new InvalidOperationException("Trying to get from an uninitialized pool, call InitPool to init.");
         return pool.Get();
-    } 
+    }
     public void PoolRelease(T obj) => pool.Release(obj);
 }

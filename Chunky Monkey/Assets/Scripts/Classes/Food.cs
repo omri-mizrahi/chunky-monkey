@@ -8,11 +8,16 @@ public class Food : MonoBehaviour
     [SerializeField] int hungerValue = 25;
     [SerializeField] AudioClip eatSound;
 
+    protected Rigidbody2D rb;
     private Action<Food> killAction;
     private bool killed;
     #endregion
 
-    public void Init(Action<Food> killAction) {
+    void Awake() {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    public virtual void Init(Action<Food> killAction) {
         this.killAction = killAction;
         killed = false;
     }
