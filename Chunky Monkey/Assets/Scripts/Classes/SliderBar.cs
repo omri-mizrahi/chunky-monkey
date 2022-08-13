@@ -6,6 +6,8 @@ public class SliderBar : MonoBehaviour
 {
     #region Variables
     [SerializeField] float maxValue = 100;
+    [SerializeField] Gradient colorGradient;
+    [SerializeField] Image fill;
     
     private Slider slider;
     private float currValue;
@@ -26,11 +28,12 @@ public class SliderBar : MonoBehaviour
 
     void SetValue(float value) {
         slider.value = value;
+        fill.color = colorGradient.Evaluate(slider.normalizedValue);
     }
 
     void SetMaxValue(float value) {
         currValue = value;
         slider.maxValue = value;
-        slider.value = value;
+        SetValue(value);
     }
 }
