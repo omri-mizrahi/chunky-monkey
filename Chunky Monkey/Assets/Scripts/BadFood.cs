@@ -18,7 +18,6 @@ public class BadFood : Food
 
     public override void Init(System.Action<Food> killAction)
     {
-        // TODO: apply random toss (radom force vector, radnom torque)
         base.Init(killAction);
         Toss();
     }
