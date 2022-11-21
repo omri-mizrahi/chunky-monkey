@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c112e8057f2ae24ca6c7dd843bddb18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hungerValue: 20
+  hungerValue: 10
   eatSound: {fileID: 0}
   scoreValue: 5
   startVelocity: {x: 0, y: -1.3}

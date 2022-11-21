@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 public class FoodSpawner : PoolBase<Food>
 {
-    // TODO: try with only 3 prefabs, see if the order always the same
     #region Variables
     [SerializeField] List<Food> prefabs;
     
     [Header("Spawn Rate")]
     [SerializeField] float startSpawnRate = 2f;
+    [Tooltip("If you want to decelerate, you can use negative numbers")]
     [SerializeField] float accelerationOverTime = .1f;
     [SerializeField] float stopSpawnRate = .5f;
     [SerializeField] float initialDelay = 0f;

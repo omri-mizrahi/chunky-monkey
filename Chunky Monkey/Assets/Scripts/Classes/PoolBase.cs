@@ -5,6 +5,14 @@ using UnityEngine.Pool;
 
 public abstract class PoolBase<T> : MonoBehaviour where T : MonoBehaviour
 {
+
+    /* 
+    TODO: fix bug - same prefabs cycle after init, because it takes them by queue of order
+    An idea how to fix it: 
+    1. rewrite the pool so it instantiates all gameobjects at start (defaultCapacity)
+    2. rewrite the pool so onGet it will choose a random obj from the pool (instead the last one)
+    */
+
     private ObjectPool<T> pool;
 
     protected void InitPool(int defaultCapacity = 10, int maxSize = 20, bool collectionCheck = true) {

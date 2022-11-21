@@ -554,7 +554,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &649517241
 GameObject:
@@ -652,7 +652,7 @@ RectTransform:
   - {fileID: 965288477}
   - {fileID: 353321902}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1027,7 +1027,7 @@ Transform:
   m_Children:
   - {fileID: 936088289}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1079655273 stripped
 MonoBehaviour:
@@ -1081,7 +1081,7 @@ Transform:
   m_Children:
   - {fileID: 528381303}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1553059079
 GameObject:
@@ -1231,6 +1231,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553059079}
   m_CullTransparentMesh: 1
+--- !u!1 &1759496390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759496391}
+  - component: {fileID: 1759496392}
+  m_Layer: 0
+  m_Name: GoodFoodSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1759496391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759496390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.18689561, y: 5.7625055, z: 0.0068760067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1759496392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759496390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe6be15c77e72d438ac2f0639d6fbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 5981132875892056372, guid: b8c3f77379172ad488b2043bca99d12a, type: 3}
+  - {fileID: 5981132875892056372, guid: 586bd687b50508e4cb478015aa1777f1, type: 3}
+  startSpawnRate: 0.5
+  accelerationOverTime: 0
+  stopSpawnRate: 0.5
+  initialDelay: 0
+  spawnPosRanges:
+  - pointA: {x: 8, y: 10}
+    pointB: {x: -8, y: 10}
 --- !u!1 &1935541239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,15 +1294,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1935541242}
-  - component: {fileID: 1935541241}
   - component: {fileID: 1935541240}
   m_Layer: 0
-  m_Name: Spanwers
+  m_Name: BadFoodSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1935541240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1272,27 +1325,6 @@ MonoBehaviour:
     pointB: {x: 8.5, y: 6}
   - pointA: {x: -8.5, y: 3}
     pointB: {x: -8.5, y: 6}
---- !u!114 &1935541241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935541239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efe6be15c77e72d438ac2f0639d6fbba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabs:
-  - {fileID: 5981132875892056372, guid: b8c3f77379172ad488b2043bca99d12a, type: 3}
-  startSpawnRate: 2
-  accelerationOverTime: 0
-  stopSpawnRate: 0.5
-  initialDelay: 0
-  spawnPosRanges:
-  - pointA: {x: 8, y: 10}
-    pointB: {x: -8, y: 10}
 --- !u!4 &1935541242
 Transform:
   m_ObjectHideFlags: 0
